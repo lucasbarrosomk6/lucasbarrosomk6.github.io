@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <title>final</title>
+
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <script src="index.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEiBLouIRytrqaMBHYASh0cIEUum0mFnc&callback=fetchData"
+    ></script>
+    <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+  </head>
+  <body>
+    <div id="Q2">
+      <h1>Where is the Space Station?</h1>
+      <br />
+      <div id="map"></div>
+    </div>
+    <div id="questions">
+      <div class="x">
+        <button
+          id="howFar"
+          class="myButton"
+          type="button"
+          onclick="displayDist()"
+        >
+          How close are you?
+        </button>
+        <br />
+        <p id="distance"></p>
+      </div>
+
+      <div class="x" id="fb">
+        <h3>How much is that in football feilds?</h3>
+
+        <p id="football"></p>
+      </div>
+
+      <div class="x" id="er">
+        <h3>How much is that in Egg Rolls?</h3>
+        <p id="egg"></p>
+      </div>
+
+      <div class="x" id="dj">
+        <h3>How much is that in Dwayne "the rock" Johnsons?</h3>
+        <p id="rock"></p>
+      </div>
+    </div>
+  </body>
+  <script>
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register("sw.js");
+    }
+  </script>
+</html>

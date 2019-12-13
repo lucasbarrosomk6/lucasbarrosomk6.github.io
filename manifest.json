@@ -1,0 +1,19 @@
+{
+  "short_name": "ISS Locator",
+  "name": "ISS Locator",
+  "icons": [
+    {
+      "src": "/assets/satilite.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/satilite.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "blue",
+  "display": "standalone",
+  "start_url": ""
+}
